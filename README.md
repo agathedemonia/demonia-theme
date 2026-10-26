@@ -15,6 +15,12 @@ Thème PrestaShop 9.1.4 de la refonte de demonia.com, adapté de la maquette Lov
 Thème autonome issu de Classic 3.1.2 (validé le 26/10/2026), restylé à partir de la maquette Lovable. Classic reste installé sur la boutique pour revenir en arrière.
 Conséquence : les correctifs de Classic ne sont pas hérités automatiquement ; à chaque nouvelle version de Classic, comparer et reporter ce qui concerne la sécurité ou la compatibilité.
 
+## Construire le ZIP à installer
+
+`./outils/construire-zip.sh` crée `dist/demonia-<version>.zip`, à importer dans Apparence > Thème et logo > Ajouter un thème.
+PrestaShop exige `config/theme.yml` à la racine du ZIP (un dossier englobant provoque « Fichier de configuration manquant »).
+Vérifié le 26/10/2026 : import et activation de 0.2.0 par le back-office du banc, puis contrôles complets sans erreur.
+
 ## Installer le thème sur le banc
 
 ```

@@ -11,5 +11,6 @@ ZIP="$OUT/demonia-$VERSION.zip"
 rm -f "$ZIP"
 cd "$ROOT/themes/demonia"
 zip -qr "$ZIP" . -x "_dev/*" "assets/cache/*" ".gitignore"
-unzip -l "$ZIP" | grep -q " config/theme.yml$" || { echo "config/theme.yml absent de la racine du ZIP"; exit 1; }
+LISTE="$(unzip -l "$ZIP")"
+grep -q " config/theme.yml$" <<< "$LISTE" || { echo "config/theme.yml absent de la racine du ZIP" >&2; exit 1; }
 echo "$ZIP"
