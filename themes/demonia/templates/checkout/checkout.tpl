@@ -25,7 +25,9 @@
 {extends file=$layout}
 
 {block name='header'}
-  {include file='checkout/_partials/header.tpl'}
+  <header id="header">
+    {include file='checkout/_partials/header.tpl'}
+  </header>
 {/block}
 
 {block name='content'}

@@ -33,3 +33,4 @@
       height="{$shop.logo_details.height}">
   </a>
 {/function}
+{include file='_partials/dm-icons.tpl'}

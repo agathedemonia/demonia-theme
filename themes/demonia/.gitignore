@@ -1,6 +1,9 @@
 /vendor/
 node_modules
-assets
+# Fichiers compilés (assets/css, assets/js, polices) VERSIONNÉS : le thème doit
+# pouvoir s'installer tel quel. Seul le cache de PrestaShop est exclu.
+assets/cache/*
+!assets/cache/index.php
 
 #vscode config
 .hintrc

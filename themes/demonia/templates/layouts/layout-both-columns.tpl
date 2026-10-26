@@ -45,11 +45,12 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
-      <header id="header">
-        {block name='header'}
-          {include file='_partials/header.tpl'}
-        {/block}
-      </header>
+      {* Démonia : l'en-tête n'est plus enveloppé dans <header id="header"> pour que sa
+         position sticky s'applique à toute la page et que les règles « #header » de Classic
+         ne s'y appliquent pas. Le tunnel de commande garde son enveloppe (checkout.tpl). *}
+      {block name='header'}
+        {include file='_partials/header.tpl'}
+      {/block}
 
       <section id="wrapper">
         {block name='notifications'}

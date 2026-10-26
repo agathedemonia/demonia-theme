@@ -1,0 +1,15 @@
+{
+  "name": "demonia-theme-styles",
+  "private": true,
+  "description": "Styles Démonia (Tailwind 4, préfixe tw:) compilés vers assets/css/demonia.css",
+  "scripts": {
+    "build": "node copy-fonts.mjs && tailwindcss -i ./demonia.css -o ../../assets/css/demonia.css --minify",
+    "watch": "tailwindcss -i ./demonia.css -o ../../assets/css/demonia.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3",
+    "@fontsource/sora": "5.3.0",
+    "@fontsource/grenze-gotisch": "5.3.0"
+  }
+}
