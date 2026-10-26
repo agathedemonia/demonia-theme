@@ -5,3 +5,4 @@ banc/identifiants-test.txt
 themes/demonia/assets/cache/*
 !themes/demonia/assets/cache/index.php
 themes/demonia/_dev/demonia/node_modules/
+dist/
